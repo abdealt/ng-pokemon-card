@@ -1,0 +1,12 @@
+h1{
+    background-color: black;
+    color: white;
+}
+
+#card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
