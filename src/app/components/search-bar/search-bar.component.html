@@ -1,0 +1,14 @@
+<div id="search-bar">
+    <input
+    [ngModel]="searchValue"
+    (ngModelChange)="updateSearch($event)"
+    
+    placeholder="Search your card" />
+    
+    <button
+    (click)="searchClick()">
+
+        <img src="assets/img/others/search-bar.svg">
+    </button>
+    
+</div>

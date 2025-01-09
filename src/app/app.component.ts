@@ -1,17 +1,21 @@
 import { Component } from '@angular/core';
 import { PlayingCardComponent } from './components/playing-card/playing-card.component';
+import { SearchBarComponent } from "./components/search-bar/search-bar.component";
 import { Monster } from './models/monster.model';
 
 @Component({
   selector: 'app-root',
-  imports: [PlayingCardComponent],
+  imports: [PlayingCardComponent, SearchBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   
+  count : number = 0;
+  search : string = '';
+
+
   monster1: Monster;
-  monster2: Monster;
 
   constructor(){
     this.monster1 = new Monster();
@@ -21,13 +25,9 @@ export class AppComponent {
     this.monster1.attackName = 'Thunderbolt';
     this.monster1.attackStrength = 90;
     this.monster1.attackDescription = 'The monster releases a powerful electric shock that hits the enemy';
+  }
 
-    this.monster2 = new Monster();
-    this.monster2.name = 'Elector';
-    this.monster2.hp = 120;
-    this.monster2.figureCaption = 'N°025 Elector';
-    this.monster2.attackName = 'Thunderbolt Suprem';
-    this.monster2.attackStrength = 90;
-    this.monster2.attackDescription = 'The monster releases a big big electric shock that hits the enemy';
+  inceaseCount(){
+    this.count++;
   }
 }
