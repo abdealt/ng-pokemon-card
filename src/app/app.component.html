@@ -1,6 +1,8 @@
+<app-search-bar/>
+
 <button (click)="toggleMonster()">Toggle monster</button>
 <div class="card-list">
     <app-playing-card
-    [monster]="monsters[selectedMonsterIndex]"
+    [monster]="selectedMonster()"
     />
 </div>

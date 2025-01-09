@@ -10,3 +10,7 @@ h1{
     align-items: center;
     justify-content: center;
 }
+
+button{
+    margin-bottom:5px;
+}

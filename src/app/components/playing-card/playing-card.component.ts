@@ -11,7 +11,7 @@ import { MonsterTypeProperties } from '../../utils/monster.utils';
 export class PlayingCardComponent implements OnChanges{
 
   @Input() monster: Monster = new Monster();
-  monsterTypeIcon : string = 'assets/img/monsters/pik.png';
+  monsterTypeIcon : string = 'assets/img/monsters/pik.jpg';
   backgroundColor: string = 'rgb(255,255,104)';
 
   ngOnChanges(changes: SimpleChanges): void {
