@@ -1,8 +1,13 @@
+import { MonsterType } from "../utils/monster.utils";
+
 export class Monster {
-    name : string = 'my Monster';
-    hp : number = 40;
-    figureCaption : string = 'N°001 Monster';
-    attackName : string = 'Geo Impact';
-    attackStrength : number = 60;
-    attackDescription : string = 'The monster hits the ground with its fist and creates a shockwave that hits the enemy';
+    name : string = 'Monster name';
+    image : string = 'Image URL';
+    type: MonsterType = MonsterType.NULL;
+    hp : number = 0;
+    figureCaption : string = 'N°000 Monster';
+
+    attackName : string = 'Attcak name';
+    attackStrength : number = 0;
+    attackDescription : string = 'Attack description';
 }
